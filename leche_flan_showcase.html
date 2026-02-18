@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Golden Delight Leche Flan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #fff8e7, #ffe4b5);
+            color: #333;
+        }
+
+        header {
+            background-color: #d4a017;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        .hero {
+            text-align: center;
+        }
+
+        .hero img {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            width: 260px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .price {
+            font-size: 22px;
+            color: #d4a017;
+            font-weight: bold;
+            margin-top: 12px;
+        }
+
+        .order-section {
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #d4a017;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #b8860b;
+        }
+
+        footer {
+            background-color: #d4a017;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Golden Delight Leche Flan</h1>
+    <p>Rich. Creamy. Homemade Happiness.</p>
+</header>
+
+<section class="hero">
+    <h2>Our Signature Leche Flan</h2>
+    <img src="https://via.placeholder.com/450x300.png?text=Leche+Flan" alt="Leche Flan">
+    <p>
+        Made with fresh eggs, premium milk, and perfectly caramelized sugar.
+        Smooth, creamy, and melt-in-your-mouth delicious.
+    </p>
+</section>
+
+<section>
+    <h2>Our Products</h2>
+    <div class="products">
+        <div class="card">
+            <h3>Classic Leche Flan</h3>
+            <p>Perfect for family desserts and special occasions.</p>
+            <div class="price">$10</div>
+        </div>
+
+        <div class="card">
+            <h3>Party Size Tray</h3>
+            <p>Good for birthdays, gatherings, and celebrations.</p>
+            <div class="price">$25</div>
+        </div>
+
+        <div class="card">
+            <h3>Mini Cups (6 pcs)</h3>
+            <p>Great for gifts or personal treats.</p>
+            <div class="price">$8</div>
+        </div>
+    </div>
+</section>
+
+<section class="order-section">
+    <h2>Order Now</h2>
+    <p>Message us on Facebook or call us to place your order!</p>
+    <a href="#" class="btn">Contact Us</a>
+</section>
+
+<footer>
+    <p>© 2026 Golden Delight Leche Flan | Homemade with Love</p>
+</footer>
+
+</body>
+</html>
