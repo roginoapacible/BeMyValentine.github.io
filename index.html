@@ -1,136 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Be My Valentine ❤️</title>
+export default function LecheFlanPreorder() {
+  return (
+    <div className="min-h-screen bg-amber-50 flex items-center justify-center p-6">
+      <div className="max-w-3xl w-full bg-white rounded-2xl shadow-xl p-8 text-center">
+        <h1 className="text-4xl md:text-5xl font-bold text-amber-900">
+          [Your Brand Name]
+        </h1>
+        
+        <p className="mt-4 text-lg text-amber-700">
+          Now accepting PRE-ORDERS 🍮
+        </p>
 
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-        background: linear-gradient(135deg, #ff758c, #ff7eb3);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        overflow: hidden;
-        text-align: center;
-    }
+        {/* Image Placeholder */}
+        <div className="mt-8 w-full h-80 bg-amber-100 rounded-2xl flex items-center justify-center shadow-md">
+          <p className="text-amber-600 text-lg">Product Image Placeholder</p>
+        </div>
 
-    h1 {
-        color: white;
-        font-size: 2rem;
-        margin-bottom: 30px;
-    }
+        <div className="mt-8 space-y-3 text-amber-800">
+          <p>✔ Made with fresh eggs & premium milk</p>
+          <p>✔ Rich caramel topping</p>
+          <p>✔ Perfect for family gatherings & celebrations</p>
+        </div>
 
-    button {
-        padding: 15px 25px;
-        font-size: 18px;
-        border: none;
-        border-radius: 30px;
-        cursor: pointer;
-        margin: 10px;
-        transition: 0.3s ease;
-    }
+        <div className="mt-8">
+          <p className="text-2xl font-bold text-amber-700">$00 per tray</p>
+          <p className="text-sm text-amber-600 mt-2">
+            Pre-order at least 2 days in advance.
+          </p>
+        </div>
 
-    #yesBtn {
-        background-color: #ff1e4d;
-        color: white;
-    }
+        <button className="mt-8 px-8 py-3 bg-amber-600 text-white rounded-2xl shadow-lg hover:bg-amber-700 transition text-lg">
+          Contact Placeholder
+        </button>
 
-    #noBtn {
-        background-color: #333;
-        color: white;
-        position: absolute;
-    }
-
-    /* Floating hearts */
-    .heart {
-        position: fixed;
-        bottom: -20px;
-        color: white;
-        animation: floatUp 6s linear infinite;
-        font-size: 20px;
-        opacity: 0.7;
-    }
-
-    @keyframes floatUp {
-        0% { transform: translateY(0); opacity: 0.7; }
-        100% { transform: translateY(-100vh); opacity: 0; }
-    }
-
-    #page2 {
-        display: none;
-    }
-</style>
-</head>
-
-<body>
-
-<!-- Background Music (replace music.mp3 with your file if you want) -->
-<audio autoplay loop>
-    <source src="music.mp3" type="audio/mpeg">
-</audio>
-
-<div id="page1">
-    <h1>For My Love 💌<br>Will you be my Valentine?</h1>
-    <button id="yesBtn">Yes 💕</button>
-    <button id="noBtn">No 💔</button>
-</div>
-
-<div id="page2">
-    <h1>Yay! I love you so much! 🎉💖</h1>
-</div>
-
-<script>
-    const noBtn = document.getElementById("noBtn");
-    const yesBtn = document.getElementById("yesBtn");
-
-    let yesSize = 1;
-
-    // Move No button + grow Yes button
-    noBtn.addEventListener("mouseover", function() {
-        const x = Math.random() * (window.innerWidth - 100);
-        const y = Math.random() * (window.innerHeight - 50);
-        noBtn.style.left = x + "px";
-        noBtn.style.top = y + "px";
-
-        yesSize += 0.1;
-        yesBtn.style.transform = "scale(" + yesSize + ")";
-    });
-
-    // Touch support for mobile
-    noBtn.addEventListener("touchstart", function() {
-        const x = Math.random() * (window.innerWidth - 100);
-        const y = Math.random() * (window.innerHeight - 50);
-        noBtn.style.left = x + "px";
-        noBtn.style.top = y + "px";
-    });
-
-    yesBtn.addEventListener("click", function() {
-        document.getElementById("page1").style.display = "none";
-        document.getElementById("page2").style.display = "block";
-    });
-
-    // Floating hearts generator
-    function createHeart() {
-        const heart = document.createElement("div");
-        heart.classList.add("heart");
-        heart.innerHTML = "💖";
-        heart.style.left = Math.random() * 100 + "vw";
-        heart.style.fontSize = (Math.random() * 20 + 10) + "px";
-        heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
-        document.body.appendChild(heart);
-
-        setTimeout(() => {
-            heart.remove();
-        }, 6000);
-    }
-
-    setInterval(createHeart, 400);
-</script>
-
-</body>
-</html>
+        <p className="mt-10 text-xs text-amber-600">
+          Pickup location: [Your Location Here]
+        </p>
+      </div>
+    </div>
+  );
+}
